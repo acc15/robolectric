@@ -79,7 +79,6 @@ import org.robolectric.shadows.ShadowCursorAdapter;
 import org.robolectric.shadows.ShadowCursorLoader;
 import org.robolectric.shadows.ShadowCursorWrapper;
 import org.robolectric.shadows.ShadowDashPathEffect;
-import org.robolectric.shadows.ShadowDataSetObservable;
 import org.robolectric.shadows.ShadowDatabaseUtils;
 import org.robolectric.shadows.ShadowDateFormat;
 import org.robolectric.shadows.ShadowDatePickerDialog;
@@ -160,10 +159,8 @@ import org.robolectric.shadows.ShadowNotification;
 import org.robolectric.shadows.ShadowNotificationManager;
 import org.robolectric.shadows.ShadowNumberPicker;
 import org.robolectric.shadows.ShadowObjectAnimator;
-import org.robolectric.shadows.ShadowObservable;
 import org.robolectric.shadows.ShadowOverlayItem;
 import org.robolectric.shadows.ShadowPaint;
-import org.robolectric.shadows.ShadowPair;
 import org.robolectric.shadows.ShadowParcel;
 import org.robolectric.shadows.ShadowPasswordTransformationMethod;
 import org.robolectric.shadows.ShadowPath;
@@ -349,7 +346,6 @@ public class RobolectricBase {
             ShadowCursorWrapper.class,
             ShadowDashPathEffect.class,
             ShadowDatabaseUtils.class,
-            ShadowDataSetObservable.class,
             ShadowDateFormat.class,
             ShadowDatePickerDialog.class,
             ShadowDebug.class,
@@ -436,11 +432,9 @@ public class RobolectricBase {
             ShadowNotificationManager.class,
             ShadowNetworkInfo.class,
             ShadowNumberPicker.class,
-            ShadowObservable.class,
             ShadowOverlayItem.class,
             ShadowObjectAnimator.class,
             ShadowPaint.class,
-            ShadowPair.class,
             ShadowParcel.class,
             ShadowPasswordTransformationMethod.class,
             ShadowPath.class,
