@@ -1,7 +1,6 @@
 package org.robolectric.shadows;
 
 import android.database.sqlite.SQLiteQueryBuilder;
-import android.text.TextUtils;
 import org.robolectric.internal.Implementation;
 import org.robolectric.internal.Implements;
 import org.robolectric.util.Join;
@@ -42,7 +41,7 @@ public class ShadowSQLiteQueryBuilder {
     }
 
     static void conditionallyAppend(StringBuilder sb, String keyword, String value) {
-        if (!TextUtils.isEmpty(value)) {
+        if (value != null && value.length() > 0) {
             sb.append(keyword);
             sb.append(value);
         }
